@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Ample lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Ample admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title> Department </title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
+    <!-- Custom CSS -->
+   <link href="css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<style>
+    /* Style for the container */
+    .container {
+        width: 90%;
+        /* margin: 0 auto; */
+        padding: 20px;
+        margin-bottom: 30px;
+        /* border: 1px solid #ccc; */
+        /* background-color: #f5f5f5; */
+        text-align: center;
+        border-radius: 20px;
+        /* border: 2px solid rgb(131, 202, 241); */
+        /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+        /* box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(0, 0, 0, 0.5); */
+    }
+
+    /* Style for the paragraph */
+    /* .container p {
+        font-size: 16px;
+        text-align: left;
+    } */
+
+    /* Style for the buttons */
+    /* .container button {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none; 
+        cursor: pointer;
+        border-radius: 10px;
+    } */
+    .col-md-12{
+        margin-bottom: 20px;
+    }
+    /* .container button:hover {
+            background-color: #0056b3;
+            background: linear-gradient(to left, rgb(98, 153, 241),rgb(66, 69, 239));
+            transform: scale(1.05);
+            border-radius: 20px;
+        } */
+        /* .container button.secondary:hover {
+            background-color: #333;
+        } */
+
+    /* Style for the second button */
+    /* .container button.secondary {
+        background-color: #555555;
+    } */
+    .complaint-box {
+    text-align: center;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* background-color: #f9f9f9; */
+    background: linear-gradient(to right, #FFFFFF, #FFFFCC);
+    cursor: pointer;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+
+.hidden {
+    display: none;
+}
+button{
+    color: white;
+    width: 20%;
+    height: 45px;
+    border-radius: 30px;
+    background: linear-gradient(to left,rgb(198, 237, 135),rgb(82, 202, 12));
+}
+
+p{
+    font-size: 20px;
+}
+
+.comp{
+    color: white;
+    /* width: 60%; */
+    font-size: 1.5rem;
+    /* display: inline-block; */
+    /* right: 90%; */
+}
+.comp .text2{
+    width: 100%;
+    height: 100%;
+    /* font-size: 1.5rem; */
+    margin-right: 950px;
+}
+.text{
+    /* width: 10px; */
+    /* margin-top: 30px; */
+    color: #03175f;
+    font-size: 1rem;
+}
+.logo-icon{
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%; /* Make it round */
+    overflow: hidden;
+}
+.logo-icon img{
+    width: 100%; /* Fill the round container */
+  height: 100%; /* Fill the round container */
+  object-fit: cover;
+}
+
+</style>
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="dashboard.html">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!-- Dark Logo icon -->
+                            <img src="icon.jpg" alt="homepage" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span class="text">
+                            Grievance redressal
+                            <!-- <img src="plugins/images/logo-text.png" alt="homepage" /> -->
+                        </span>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <ul class="navbar-nav d-none d-md-block d-lg-none">
+                        <li class="nav-item">
+                            <a class="nav-toggler nav-link waves-effect waves-light text-white"
+                                href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+
+                        <div class="comp">
+                            <p class="text2">
+                                Complaints
+                            </p>
+                        </div>
+
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class=" in">
+                            <form role="search" class="app-search d-none d-md-block me-3">
+                                <input type="text" placeholder="Search..." class="form-control mt-0">
+                                <a href="" class="active">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </form>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li>
+                            <a class="profile-pic" href="#">
+                                <img src="plugins/images/users/varun.jpg" alt="user-img" width="36"
+                                    class="img-circle"><span class="text-white font-medium">Department</span></a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
+                                aria-expanded="false">
+                                <i class="far fa-clock" aria-hidden="true"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
+                                aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="hide-menu">Profile</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html"
+                                aria-expanded="false">
+                                <i class="fa fa-columns" aria-hidden="true"></i>
+                                <span class="hide-menu">Complaints</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="min-height: 250px;">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h3 class="page-title">Complaints</h3>
+                    </div> -->
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <div class="d-md-flex">
+                            <!-- <ol class="breadcrumb ms-auto">
+                                <li><a href="#" class="fw-normal">Dashboard</a></li>
+                            </ol> -->
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="container">
+                <!-- <div class="row"> -->
+                    <div class="complaint-box">
+                        <div class="box" id="complaintBox">
+                            <h2>Click to Reveal Complaint</h2>
+                            <div id="complaintContent" class="hidden">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id doloribus delectus nam iste reiciendis. Qui eius veritatis minima officiis. Officia veniam qui odit expedita. Ducimus rem eos repudiandae odit doloremque quo fugit!</p>
+                                <button id="closeButton">Resolved</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="container">
+                    <div class="complaint-box">
+                        <div class="box" id="complaintBox1">
+                            <h2>Click to Reveal Complaint</h2>
+                            <div id="complaintContent1" class="hidden">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id doloribus delectus nam iste reiciendis. Qui eius veritatis minima officiis. Officia veniam qui odit expedita. Ducimus rem eos repudiandae odit doloremque quo fugit!</p>
+                                <button id="closeButton1">Resolved</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container">
+
+                    <div class="complaint-box">
+                        <div class="box" id="complaintBox2">
+                            <h2>Click to Reveal Complaint</h2>
+                            <div id="complaintContent2" class="hidden">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id doloribus delectus nam iste reiciendis. Qui eius veritatis minima officiis. Officia veniam qui odit expedita. Ducimus rem eos repudiandae odit doloremque quo fugit!</p>
+                                <button id="closeButton2">Resolved</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center"> 2023 © Copyright
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.js"></script>
+
+    <script>
+        const complaintBox = document.getElementById('complaintBox');
+const complaintContent = document.getElementById('complaintContent');
+const closeButton = document.getElementById('closeButton');
+
+complaintBox.addEventListener('click', () => {
+    complaintContent.classList.remove('hidden');
+    complaintBox.removeEventListener('click');
+});
+
+closeButton.addEventListener('click', () => {
+    complaintContent.classList.add('hidden');
+    complaintBox.addEventListener('click', () => {
+        complaintContent.classList.remove('hidden');
+    });
+});
+
+        </script>
+
+<script>
+    const complaintBox2 = document.getElementById('complaintBox2');
+const complaintContent2 = document.getElementById('complaintContent2');
+const closeButton2 = document.getElementById('closeButton2');
+
+complaintBox2.addEventListener('click', () => {
+complaintContent2.classList.remove('hidden');
+complaintBox2.removeEventListener('click');
+});
+
+closeButton.addEventListener('click', () => {
+complaintContent2.classList.add('hidden');
+complaintBox2.addEventListener('click', () => {
+    complaintContent2.classList.remove('hidden');
+});
+});
+
+    </script>
+
+<script>
+    const complaintBox1 = document.getElementById('complaintBox1');
+const complaintContent1 = document.getElementById('complaintContent1');
+const closeButton1 = document.getElementById('closeButton1');
+
+complaintBox1.addEventListener('click', () => {
+complaintContent1.classList.remove('hidden');
+complaintBox1.removeEventListener('click');
+});
+
+closeButton.addEventListener('click', () => {
+complaintContent1.classList.add('hidden');
+complaintBox1.addEventListener('click', () => {
+    complaintContent1.classList.remove('hidden');
+});
+});
+
+    </script>
+    
+</body>
+
+</html>
