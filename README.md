@@ -1,12 +1,9 @@
-Here's a draft of a README file for your project:
-
----
-
 # Organizational Grievance Support System
 
 Welcome to the Organizational Grievance Support System (OGSS). This system is designed to streamline the process of reporting, reviewing, and addressing grievances within an organization. The project is organized into three main branches: frontend, backend, and .apk file.
 
 ## Table of Contents
+- [Linke](#links)
 - [Branches](#branches)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
@@ -14,6 +11,12 @@ Welcome to the Organizational Grievance Support System (OGSS). This system is de
 - [Contributing](#contributing)
 - [License](#license)
 
+## Links
+    Admin side web video link - https://drive.google.com/file/d/1Z7D-vZPQhmJs7NyqHbE8rN0sMLrSjLDE/view
+    Admin side web frontend hosted link - https://japanshah17.github.io/odoo-combat/
+    Employee flutter apk video link - https://drive.google.com/file/d/1oaMjpde1p7k1UOPSPcMpFIa0D_KirtjE/view?usp=sharing
+    Employee flutter apk - https://drive.google.com/file/d/1iBtCO7Ahw1iS4rHaYRYtZ32vQftfOtrG/view?usp=sharing
+    Fastapi hosted link - https://grievancebackend.onrender.com/docs 
 ## Branches
 
 ### 1. Frontend
