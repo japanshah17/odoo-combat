@@ -7,5 +7,6 @@ class Grievance(BaseModel):
     department:str
     severity:str
     postedBy:str
+    grievanceId:str
     status:str= None
     forwardedTo:str= None

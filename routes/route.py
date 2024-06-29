@@ -106,7 +106,7 @@ async def getMyGrievance(email:str):
 @router.post("/admin/rejectGrievance")
 async def rejectGrievance(email:str,grievanceId:str):
     if admin_collection.find_one({'email':email}) !=None:
-        grievance_collection.find_one_and_update({'_id':grievanceId},{ '$set': {'status':'rejected'}})
+        grievance_collection.find_one_and_update({'grievanceId':grievanceId},{ '$set': {'status':'rejected','forwardedTo':''}})
         grievanceList = {'code':200,'success':True,'msg':'Grievance rejected Successfully','data':''}
         return grievanceList
     else:
@@ -116,8 +116,8 @@ async def rejectGrievance(email:str,grievanceId:str):
 @router.post("/admin/forwardGrievance")
 async def forwardGrievance(email:str,grievanceId:str,forwardedTo:str):
     if admin_collection.find_one({'email':email}) !=None:
-        grievance_collection.find_one_and_update({'_id':grievanceId},{ '$set': {'status':'forwarded','forwardedTo':forwardedTo}})
-        grievanceList = {'code':200,'success':True,'msg':'Grievance forwarded Successfully','data':''}
+        grievance_collection.find_one_and_update({'grievanceId':grievanceId},{ '$set': {'status':'forwarded','forwardedTo':forwardedTo}})
+        grievanceList = {'code':200,'success':True,'msg':'Grievance forwarded Successfully','data': ''}
         return grievanceList
     else:
         grievanceList = {'code':406,'success':False,'msg':'Not an admin','data':''}

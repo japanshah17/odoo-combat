@@ -7,6 +7,7 @@ def grievance_serial(grievance) -> dict:
           "department":str(grievance["department"]),
           "severity":str(grievance["severity"]),
           "postedBy":str(grievance["postedBy"]),
+          "grievanceId":str(grievance["grievanceId"]),
           "status":str(grievance["status"]),
           "forwardedTo":str(grievance["forwardedTo"]),
     }
