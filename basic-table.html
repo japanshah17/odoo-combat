@@ -252,7 +252,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="register.php">
+                    <!-- <form method="post" action="register.php"> -->
+                        <form id="reg_form">
                         <div class="mb-3">
                             <label for="register-username" class="form-label">Username</label>
                             <input type="text" class="form-control" id="register-username" name="register-username" required>
@@ -262,7 +263,7 @@
                             <input type="password" class="form-control" id="register-password" name="register-password" required>
                         </div>
                         <div class="mb-3">
-                            <label for="register-gender" class="form-label">Gender</label>
+                            <label for="re-gender" class="form-label">Gender</label>
                             <input type="re-gender" class="form-control" id="re-gender" name="re-gender" required>
                         </div>
                         <div class="mb-3">
@@ -275,6 +276,36 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('registrationModal').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            let formData = {
+                name: document.getElementById('register-username').value,
+                password: document.getElementById('register-password').value,
+                email: document.getElementById('register-email').value,
+                gender: document.getElementById('re-gender').value,
+            };
+    
+            fetch('https://grievancebackend.onrender.com/register', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Optionally, show success message or redirect to another page
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                // Handle error, show error message, etc.
+            });
+        });
+    </script>
     <!-- End Registration Modal -->
 
     <!-- All Jquery -->
